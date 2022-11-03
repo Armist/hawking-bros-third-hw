@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --primary: #71aaeb;
+  --primary-darken: #438cdf;
+  --radius: 4px;
+  --border: 2px solid var(--primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 360px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: var(--radius);
+  padding: 10px;
+  border: var(--border);
+}
+
+.block {
+  border-radius: var(--radius);
+  background-color: #faebd7;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.controls {
+  max-height: 48px;
+  width: 100%;
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls__input,
+.controls__button {
+  height: 100%;
+  padding: 7px 8px;
+  border-radius: var(--radius);
+  border: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  outline: none;
+  color: #000;
+  background-color: inherit;
+  transition: all .3s linear;
+}
+
+.controls__input {
+  flex: 0 0 30%;
+  border: var(--border);
+  cursor: pointer;
+}
+
+.controls__input:focus {
+  border-color: var(--primary-darken);
+}
+
+.controls__button {
+  cursor: pointer;
+  color: #fff;
+  flex: 0 0 30%;
+  background-color: var(--primary);
+}
+
+.controls__button:hover {
+  background-color: var(--primary-darken);
+}
+
+.clear {
+  background-color: #dd4848;
+}
+
+.clear:hover {
+  background-color: rgb(219, 32, 32)
+}
